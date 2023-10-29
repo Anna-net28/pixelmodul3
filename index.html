@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Адаптив</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo logo">
+                <p class="text__logo">Logo</p>
+            </div>
+
+            <nav class="header__menu">
+                <ul class="menu__list menu">
+                    <li class="menu__item"><a href="#" class="menu__link number">+7 (962) 556 - 1234</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link clik">Перезвоните мне</a></li>
+                </ul>
+            </nav>
+            <button type="submit" class="header__button"><img src="img/Phone.svg" class="header__img" alt=""></button>
+        </div>
+
+        <div class="banner">
+            <div class="banner__container container">
+                <div class="banner__block">
+                    <h1 class="banner__title">Заголовок c уникальным торговым предложение по системе 4U</h1>
+                    <p class="banner__subtitle">Описания предлжения компании. Сайт рыбатекст поможет дизайнеру,
+                        верстальщику, вебмастеру сгенерировать несколько абзацев более<span class="banner__subtitle hide">менее осмысленного текста рыбы на
+                        русском языке, а начинающему.</span></p>
+                    <button type="submit" class="banner__button btn">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="aboutus">
+            <div class="container">
+                <div class="aboutus__block">
+
+                    <div class="aboutus__title-block">
+                        <h2 class="aboutus__title title">Уникальный заголовок для преимущества компании</h2>
+                        <h3 class="aboutus__subtitle subtitle">О нас</h3>
+                    </div>
+
+                    <div class="aboutus__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                        несколько абзацев
+                        более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить.</div>
+                </div>
+                <ul class="aboutus__menu">
+                    <li class="aboutus__item">
+                        <a href="#" class="aboutus__link-number">1</a>
+                        <a href="#" class="aboutus__link">Первое целевое преимущество</a>
+                    </li>
+
+                    <li class="aboutus__item">
+                        <a href="#" class="aboutus__link-number">2</a>
+                        <a href="#" class="aboutus__link">Второе целевое преимущество</a>
+                    </li>
+
+                    <li class="aboutus__item">
+                        <a href="#" class="aboutus__link-number">3</a>
+                        <a href="#" class="aboutus__link">Третье целевое преимущество</a>
+                    </li>
+
+                    <li class="aboutus__item">
+                        <a href="#" class="aboutus__link-number">4</a>
+                        <a href="#" class="aboutus__link">Четвертое целевое преимущество</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <div class="container">
+                <div class="feedback__block">
+                    <div class="feedback__block-title">
+                        <h2 class="feedback__title title">Остались вопросы?</h2>
+                        <h3 class="feedback__subtitle subtitle">Оставьте номер телефона, и мы перезвоним вам</h3>
+                    </div>
+
+                    <form class="feedback__form">
+                        <input class="feedback__input input" type="text" name="name" placeholder="Ваше имя" required>
+                        <input class="feedback__input input" type="tel" name="phone" placeholder="Телефон" required
+                            title="+7-___-___-__-__" pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
+                        <input class="feedback__input input" type="email" name="email" placeholder="E-mail" required>
+                    </form>
+                    <button class="feedback__button btn" type="submit">позвоните мне</button>
+                        <p class="feedback__iagree color">Я даю своё <a href="#" class="feedback__link color">согласие
+                            </a> на обработку моих персональных данных.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__copy">
+                <div class="footer__logo logo">
+                    <div class="text__logo">Logo</div>
+                </div>
+
+                <div class="footer__company">
+                    <p class="footer__name">© 2022 XXXcompany.
+                        Все права защищены.</p>
+                </div>
+            </div>
+
+            <div class="footer__copy-name">
+                <p class="footer__name copy">Сделано Ивановым Иваном</p>
+            </div>
+
+            <div class="footer__adress menu">
+                <a href="+7 (962) 556 - 1234" class="footer__link number">+7 (962) 556 - 1234
+                </a>
+                <a href="#" class="footer__link clik">Перезвоните мне</a>
+            </div>
+            <button type="submit" class="header__button"><img src="img/Phone.svg" class="header__img" alt=""></button>
+        </div>
+    </footer>
+
+</body>
+
+</html>

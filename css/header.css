@@ -1,0 +1,75 @@
+.header {
+    width: 100%;
+    background: linear-gradient(rgba(47, 50, 75, 0.85), rgba(47, 50, 75, 0.85)), url(../img/header.png);
+    background-position: top;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+}
+
+.header__container {
+    padding: 40px 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    z-index: 50;
+    min-height: 68px;
+}
+
+.header__button {
+    display: none;
+}
+
+.banner__button {
+    padding: 12px 48px;
+}
+
+@media (max-width:1440px) {
+    .header__container {
+        max-width: 100%;
+        padding: 30px 30px 70px 30px;
+    }
+    
+}
+
+@media (max-width:1024px) {
+    .header__container {
+        padding: 25px 33px 0px 28px;
+    }
+    .header {
+        background: linear-gradient(rgba(47, 50, 75, 0.85), rgba(47, 50, 75, 0.85)), url(../img/stag-office-mockup.png);
+    }
+    .logo{
+        width: 60px;
+        height: 60px;
+        
+    }
+    .text__logo {
+        padding: 8px 2px 14px 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        background: linear-gradient(rgba(47, 50, 75, 0.85), rgba(47, 50, 75, 0.85)), url(../img/320.png);
+    }
+    .header__container {
+        padding: 15px 15px 35px 15px;
+    }
+    .header__button {
+        display: flex;
+        width: 24px;
+        height: 24px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+    .text__logo {
+        padding: 4px 2px 7px 3px;
+    }
+}

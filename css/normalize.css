@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+
+    line-height: 28px;
+    color: var(--text-color);
+    font-family: Roboto;
+    font-size: 20px;
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+figcaption {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    font-family: Roboto;
+}
+
+p {
+    margin: 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+img {
+    border-style: none;
+}
+
+svg {
+    max-width: 100%;
+    height: 100%;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+    outline: none;
+    cursor: pointer;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+blockquote,
+figure {
+    margin: 0;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+.container {
+    max-width: 100%;
+    padding: 70px 200px 68px 200px;
+}
+
+.title {
+    text-align: center;
+    font-size: calc(20px + 15 * (100vw / 1600));
+    font-weight: 700;
+    line-height: normal;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: calc(12px + 10 * (100vw / 1600));
+    font-weight: 500;
+    line-height: normal;
+}
+
+.btn {
+    background: var(--color-f);
+    border-radius: 50px;
+    box-shadow: 0px 4px 25px 0px var(--color-f);
+    color: var(--text-color);
+    border: 1px solid var(--color-f);
+    font-size: calc(16px + 4 * (100vw / 1600));
+    font-weight: 500;
+}
+
+.color {
+    font-size: calc(11px + 9 * (100vw / 1600));
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.logo {
+    border-radius: 50px;
+    background-color: var(--color-f);
+    width: var(--size-n);
+    height: var(--size-n);
+    display: flex;
+    align-items: center;
+}
+
+.text__logo {
+    color: #FFF;
+    font-family: Pacifico;
+    font-size: calc(11px + 14 * (100vw / 1600));
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    line-height: normal;
+    padding: 6px 7px 12px 8px;
+}
+
+.number {
+    color: var(--text-color);
+    font-size: calc(21px + 3 * (100vw / 1600));
+    font-weight: 400;
+}
+
+.clik {
+    font-size: calc(13px + 3 * (100vw / 1600));
+    border-bottom: 1px solid var(--text-color);
+    font-weight: 400;
+    color: var(--text-color);
+    display: block;
+    min-height: 21px;
+    line-height: normal;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+}
+
+:root {
+    --color-primary: #383A4C;
+    --text-color: #fff;
+    --color-g: #F9F9F9;
+    --color-f: #15A9CB;
+    --color-a: #23C7EC;
+    --color-n: #383A4C;
+    --color-m: #4A76A8;
+    --color-l: #2F324B;
+    --color-y: #2A2C3F;
+    --texst-size-a: calc(14px + 8 * (100vw / 1600));
+    /*22px*/
+    --texst-size-b: calc(20px + 32 * (100vw / 1600));
+    /*52*/
+    --texst-size-c: calc(13px + 3 * (100vw / 1600));
+    /*16*/
+    --texst-size-d: calc(20px + 15 * (100vw / 1600));
+    /*35*/
+    --texst-size-i: calc(12px + 6 * (100vw / 1600));
+    /*18*/
+    --texst-size-f: calc(52px + 5 * (100vw / 1600));
+    /* 57*/
+    --texst-size-g: calc(8px + 4 * (100vw / 1600));
+    /*12*/
+    --texst-size-k: calc(21px + 3 * (100vw / 1600));
+    /*24*/
+    --texst-size-l: calc(11px + 14 * (100vw / 1600));
+    /*25*/
+    --texst-size-m: calc(18px + 2 * (100vw / 1600));
+    /*20*/
+    --size-n: calc(30px + 38 * (100vw / 1600));
+}
+
+
+@media (max-width:1440px) {
+    .container {
+        padding: 70px 30px 70px 30px;
+    }
+}
+
+@media (max-width:1024px) {
+    .container {
+        padding: 70px 30px 70px 30px;
+    }
+
+    .title {
+        font-size: calc(32px + (8 + 8 * 0.7) * ((100vw - 1024px) / 1600));
+    }
+
+    .subtitle {
+        font-size: calc(18px + (4 + 4 * 0.7) * ((100vw - 1024px) / 1600));
+    }
+
+    .color {
+        font-size: calc(17px + (3 + 3 * 0.7) * ((100vw - 1024px) / 1600));
+
+    }
+
+    .text__logo {
+        font-size: calc(22px + (3 + 3 * 0.7) * ((100vw - 1024px) / 1600));
+    }
+
+    .number {
+        font-size: calc(21px + (3 + 3 * 0.7) * ((100vw - 1024px) / 1600));
+    }
+
+    .clik {
+        font-size: calc(13px + (3 + 3 * 0.7) * ((100vw - 1024px) / 1600));
+    }
+
+}
+
+@media (max-width:768px) {
+    .container {
+        padding: 30px 15px 60px 15px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .btn {
+        font-size: calc(16px + (4 + 4 * 0.7) * ((100vw - 320px) / 1600));
+    }
+
+    .title {
+        font-size: calc(20px + (15 + 15 * 0.7) * ((100vw - 320px) / 1600));
+    }
+
+    .subtitle {
+        font-size: calc(12px + (10 + 10 * 0.7) * ((100vw - 320px) / 1600));
+    }
+
+    .color {
+        font-size: calc(11px + (9 + 9 * 0.7) * ((100vw - 320px) / 1600));
+        margin-bottom: -30px;
+    }
+
+    .text__logo {
+        font-size: calc(11px + (14 + 14 * 0.7) * ((100vw - 320px) / 1600));
+    }
+
+    .number {
+        font-size: calc(21px + (3 + 3 * 0.7) * ((100vw - 320px) / 1600));
+    }
+
+    .clik {
+        font-size: calc(13px + (3 + 3 * 0.7) * ((100vw - 320px) / 1600));
+    }
+
+}
